@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert a string in abbreviated form</title>
+</head>
+
+<body>
+    <script>
+        let abber_name = function (st){
+            var split_name = st.trim().split(" ");
+            console.log(split_name);
+            if(split_name.length>1){
+                document.write(split_name[0].charAt(0).toUpperCase()+"."+
+                split_name[1].charAt(0).toUpperCase()+"."+
+                split_name[2]);
+            }else{
+             document.write( split_name[0]);
+            }
+        }
+
+        abber_name("rakesh kumar sharma");
+    </script>
+</body>
+
+</html>
